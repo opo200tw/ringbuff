@@ -17,13 +17,13 @@ from sphinx.builders.html import StandaloneHTMLBuilder
 import subprocess, os
 
 # Run doxygen first
-read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-if read_the_docs_build:
-    subprocess.call('doxygen doxy_ringbuff.doxy', shell=True)
+# read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+# if read_the_docs_build:
+subprocess.call('doxygen doxyfile.doxy', shell=True)
 # -- Project information -----------------------------------------------------
 
 project = 'Ringbuffer'
-copyright = '2019, Tilen Majerle'
+copyright = '2020, Tilen MAJERLE'
 author = 'Tilen MAJERLE'
 
 # The full version, including alpha/beta/rc tags
@@ -43,6 +43,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
+    'sphinx_sitemap',
 
 	'breathe',
 ]
@@ -81,11 +82,19 @@ html_theme_options = {
 }
 html_logo = 'static/images/logo.svg'
 github_url = 'https://github.com/MaJerle/ringbuff'
+html_baseurl = 'https://docs.majerle.eu/projects/ringbuff/'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['static']
+html_css_files = [
+    'css/common.css',
+    'css/custom.css',
+]
+html_js_files = [
+    'https://kit.fontawesome.com/3102794088.js'
+]
 
 master_doc = 'index'
 

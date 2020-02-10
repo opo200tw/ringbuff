@@ -3,7 +3,7 @@
 
 #include "stdio.h"
 #include "string.h"
-#include "ringbuff/ringbuff.h"
+ #include "ringbuff.h"
 
 /* Create data array and buffer */
 uint8_t ringbuff_data[8 + 1];
