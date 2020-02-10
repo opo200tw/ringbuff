@@ -1,0 +1,26 @@
+{
+    "authors": [
+        {
+            "maintainer": true,
+            "name": "opo200tw"
+        },
+        {
+            "name": "ringbuffer"
+        }
+    ],
+    "description": "ringbuffer",
+    "frameworks": "stm32cube",
+    "keywords": "ringbuffer",
+    "name": "ringbuffer",
+    "platforms": "ststm32",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/opo200tw/ringbuff.git"
+    },
+    "export": {
+        "exclude": [
+            "lib/ringbuff/docs/*/*.c:",
+            "lib/ringbuff/docs/examples_src/example_tt_buff_size.c"
+        ]
+    }
+}
