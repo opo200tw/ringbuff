@@ -1,4 +1,4 @@
-#include "ringbuff/ringbuff.h"
+ #include "ringbuff.h"
 
 /* Number of data blocks to write */
 #define N          3

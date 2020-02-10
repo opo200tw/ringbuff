@@ -1,4 +1,4 @@
-#include "ringbuff/ringbuff.h"
+ #include "ringbuff.h"
 
 /* Buffer variables */
 ringbuff_t buff;                            /* Declare ring buffer structure */

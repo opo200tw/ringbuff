@@ -31,7 +31,7 @@
  * Author:          Tilen MAJERLE <tilen@majerle.eu>
  * Version:         v1.2.0
  */
-#include "ringbuff/ringbuff.h"
+ #include "ringbuff.h"
 
 /* --- Buffer unique part starts --- */
 /* Prefix for all buffer functions and typedefs */

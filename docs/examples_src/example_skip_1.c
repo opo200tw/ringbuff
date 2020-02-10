@@ -1,5 +1,5 @@
 
-#include "ringbuff/ringbuff.h"
+ #include "ringbuff.h"
 
 /* Declare buffer variables */
 ringbuff_t buff;
